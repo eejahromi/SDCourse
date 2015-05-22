@@ -21,7 +21,15 @@
     CourseTableViewController *ctvc = (CourseTableViewController *) [[nav viewControllers]objectAtIndex:0];
     ctvc.managedObjectContext = self.managedObjectContext;
     
+    [self setupAppearance];
+    
     return YES;
+}
+
+-(void)setupAppearance{
+    UINavigationBar *navBarAppearance = [UINavigationBar appearance];
+    navBarAppearance.barTintColor = [UIColor colorWithRed:49/255.0 green:136/255.0 blue:210/255.0 alpha:1.0];
+    navBarAppearance.tintColor = [UIColor blackColor];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
