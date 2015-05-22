@@ -15,6 +15,10 @@
 		7C3A01441B0AD57500450F3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3A01431B0AD57500450F3B /* Images.xcassets */; };
 		7C3A01471B0AD57500450F3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C3A01451B0AD57500450F3B /* LaunchScreen.xib */; };
 		7C3A01531B0AD57500450F3B /* CDCourseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A01521B0AD57500450F3B /* CDCourseTests.m */; };
+		7C3A01641B0AD6F000450F3B /* CourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A01631B0AD6F000450F3B /* CourseTableViewController.m */; };
+		7C3A01671B0B032700450F3B /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A01661B0B032700450F3B /* Course.m */; };
+		7C3A016A1B0C458C00450F3B /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A01691B0C458C00450F3B /* AddCourseViewController.m */; };
+		7CEC1BE71B0EF99F00746FE7 /* DisplayEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEC1BE61B0EF99F00746FE7 /* DisplayEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		7C3A014C1B0AD57500450F3B /* CDCourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDCourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3A01511B0AD57500450F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3A01521B0AD57500450F3B /* CDCourseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCourseTests.m; sourceTree = "<group>"; };
+		7C3A01621B0AD6F000450F3B /* CourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseTableViewController.h; path = ../CourseTableViewController.h; sourceTree = "<group>"; };
+		7C3A01631B0AD6F000450F3B /* CourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseTableViewController.m; path = ../CourseTableViewController.m; sourceTree = "<group>"; };
+		7C3A01651B0B032700450F3B /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		7C3A01661B0B032700450F3B /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		7C3A01681B0C458C00450F3B /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		7C3A01691B0C458C00450F3B /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
+		7CEC1BE51B0EF99F00746FE7 /* DisplayEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayEditViewController.h; sourceTree = "<group>"; };
+		7CEC1BE61B0EF99F00746FE7 /* DisplayEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,14 @@
 		7C3A01321B0AD57500450F3B /* CDCourse */ = {
 			isa = PBXGroup;
 			children = (
+				7C3A01651B0B032700450F3B /* Course.h */,
+				7C3A01661B0B032700450F3B /* Course.m */,
+				7C3A01621B0AD6F000450F3B /* CourseTableViewController.h */,
+				7C3A01631B0AD6F000450F3B /* CourseTableViewController.m */,
+				7C3A01681B0C458C00450F3B /* AddCourseViewController.h */,
+				7C3A01691B0C458C00450F3B /* AddCourseViewController.m */,
+				7CEC1BE51B0EF99F00746FE7 /* DisplayEditViewController.h */,
+				7CEC1BE61B0EF99F00746FE7 /* DisplayEditViewController.m */,
 				7C3A01371B0AD57500450F3B /* AppDelegate.h */,
 				7C3A01381B0AD57500450F3B /* AppDelegate.m */,
 				7C3A013D1B0AD57500450F3B /* ViewController.h */,
@@ -222,9 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3A01641B0AD6F000450F3B /* CourseTableViewController.m in Sources */,
+				7CEC1BE71B0EF99F00746FE7 /* DisplayEditViewController.m in Sources */,
 				7C3A013C1B0AD57500450F3B /* CDCourse.xcdatamodeld in Sources */,
+				7C3A016A1B0C458C00450F3B /* AddCourseViewController.m in Sources */,
 				7C3A01391B0AD57500450F3B /* AppDelegate.m in Sources */,
 				7C3A013F1B0AD57500450F3B /* ViewController.m in Sources */,
+				7C3A01671B0B032700450F3B /* Course.m in Sources */,
 				7C3A01361B0AD57500450F3B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +444,7 @@
 				7C3A01581B0AD57500450F3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C3A01591B0AD57500450F3B /* Build configuration list for PBXNativeTarget "CDCourseTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +453,7 @@
 				7C3A015B1B0AD57500450F3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
