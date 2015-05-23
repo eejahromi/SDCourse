@@ -24,6 +24,7 @@
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
     [dateFormat setDateFormat:@"yyyy-MM-dd"];
     self.dateField.text = [dateFormat stringFromDate:[self.currentCourse releaseDate]];
+    
 }
 
 - (void)didReceiveMemoryWarning {

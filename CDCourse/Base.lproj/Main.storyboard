@@ -31,7 +31,7 @@
                     <navigationItem key="navigationItem" title="Course" id="ZDg-c8-Heb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hFs-6U-GgC">
                             <connections>
-                                <segue destination="2gx-CQ-6DH" kind="modal" identifier="addCourse" id="TUq-rj-wLO"/>
+                                <segue destination="2gx-CQ-6DH" kind="modal" identifier="addCourse" id="dDb-W8-rQ8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -113,23 +113,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQY-Ni-Mb2">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="New Course" id="cqc-b2-VPA">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lhL-cr-SqY">
-                                            <connections>
-                                                <action selector="cancel:" destination="2gx-CQ-6DH" id="oJn-52-g9K"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2aV-3e-TqW">
-                                            <connections>
-                                                <action selector="save:" destination="2gx-CQ-6DH" id="lN0-zJ-XWS"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTJ-rV-Mfg">
                                 <rect key="frame" x="16" y="97" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -163,6 +146,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQY-Ni-Mb2">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="New Course" id="cqc-b2-VPA">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lhL-cr-SqY">
+                                            <connections>
+                                                <action selector="cancel:" destination="2gx-CQ-6DH" id="oJn-52-g9K"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2aV-3e-TqW">
+                                            <connections>
+                                                <action selector="save:" destination="2gx-CQ-6DH" id="lN0-zJ-XWS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
