@@ -184,7 +184,10 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier]isEqualToString:@"addCourse"]) {
-        AddCourseViewController *acvc = (AddCourseViewController *)[segue destinationViewController];
+        UINavigationController *navDestination = segue.destinationViewController;
+        AddCourseViewController *acvc = navDestination.viewControllers[0];
+
+        //        AddCourseViewController *acvc = (AddCourseViewController *)[segue destinationViewController];
         acvc.delegate = self;
         
         Course *newCourse = (Course *)[NSEntityDescription insertNewObjectForEntityForName:@"Course" inManagedObjectContext:[self managedObjectContext]];

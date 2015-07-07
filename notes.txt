@@ -1,0 +1,13 @@
+Main storyboard file base name when adding a new story board to the project
+NSFetchedResultsController used for UITableView
+when we fetch we get an array of object models back
+to create a fetchedResultsController we need:
+-fetch request
+-sort discriptor
+fetchedResultsController alloc init
+perform fetch
+
+to delete we need:
+-managedObjectContext
+-deleteObject
+-save
